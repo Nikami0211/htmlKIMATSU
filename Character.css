@@ -1,0 +1,192 @@
+body{
+    background-image: url(./image/tactile_noise.webp);
+    cursor: url(./image/chiruno2.png),default;
+}
+@font-face {
+    font-family:'Porto-400';
+    src: url('./font/Porto\ 400.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'Rounded';
+    src: url('./font/GenSenRounded-M.ttc') format("truetype");
+}
+@font-face {
+    font-family: 'Togalite';
+    src: url('/font/Togalite-Medium.otf') format("opentype");
+}
+.tmp{
+    background-color: rgb(113, 125, 136);
+    color: rgb(184, 189, 187);
+    font-size: 22px;
+    margin:0px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+.upt{
+    font-family: 'Porto-400';
+    margin:0px auto;
+    background-color: rgb(96, 98, 99);
+    height: 100px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.upt a{
+    background-color: rgb(96, 98, 99);
+    height: 100px;
+    width: 15%;
+    margin-right: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    text-decoration:none;
+}
+.lft{
+    font-family: 'Porto-400';
+ position: fixed;
+    color: aliceblue;
+    font-size: 25px;
+    left:-0.5%;
+    top:0%;
+    z-index: 1;
+    text-align:center; 
+    padding-right: 15px;
+    writing-mode: vertical-rl;
+    width: 3%;
+    height: 100%;
+}
+.rft{
+    font-family: 'Porto-400';
+    position: fixed;
+    color: aliceblue;
+    font-size: 25px;
+    top:0%;
+    left: 96%;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:4%;
+    flex-direction: column; 
+    text-align: center;
+}
+.rft img{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 75%;
+    border-radius: 50%;
+    border: 1px solid #8d74c7; 
+}
+
+.timage{
+    margin:0px auto 10% auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.infocontainer{
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #63060600; 
+    margin: 0 auto;
+    width: 70%;
+    height: 65%;
+    display:flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to top, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%), linear-gradient(to right, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ), linear-gradient(to left , rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ),url(./image/插圖2.png);
+}
+.infocontainer img{
+    position: relative;
+    height: 100%;
+    margin: 0.5% 0.5% 0.5% 0.5%  ;
+    width: 97%;
+    box-shadow: rgba(0,0,0, .2) 0 0 30px;
+    border-radius: 20px;
+}
+.timage img{
+    object-fit: contain;
+    width: 100%;
+}
+.infotext{
+    font-family: 'Rounded';
+    margin-right:4.9% ;
+    padding: 1% ;
+    font-size: 1.5em;
+    position: relative;
+    float: left;
+    left:3%;
+    width: 50%;
+    height: auto;
+    line-height: 2em;
+    background-color: rgb(21, 22, 29);
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(77, 56, 82, 0.274) 10px 10px 30px;
+    border: 1px solid #940eb68a; 
+}
+.card-container{
+    font-family: 'Porto-400';
+    margin:5%  auto 5% auto;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.card{
+    position: relative;
+    width: 100%;
+}
+.card-text{
+    font-family: 'Togalite';
+    font-size: 2vw;
+    position:absolute;
+    text-align: center;
+    display: flex;
+    z-index: 2;
+    color: rgb(175, 3, 3);
+    letter-spacing: 1vw;
+}
+.gauze{
+    /* BIG WIDTH background */
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    width: 100%;
+    background-image: url("./image/gauze.png");
+}
+
+.pagebottom{
+    margin-top: 10%;
+    height: 500px;
+    width: 100%;
+    background-color:rgb(21, 22, 29); ;
+    display: flex;
+    justify-content: center;
+
+
+}
+.pagebottom img{
+    height: 10%;
+}
+.midimage{
+    position: relative;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+}
+.midimage img{
+    width: 35%;
+    border-radius: 20px;
+    border: 1px solid #63060600; 
+}

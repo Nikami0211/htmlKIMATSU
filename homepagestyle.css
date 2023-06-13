@@ -1,0 +1,255 @@
+body{
+    background-image: url(./image/darkness.jpg);
+    cursor: url(./image/chiruno2.png),default;
+}
+@font-face {
+    font-family:'Porto-400';
+    src: url('./font/Porto\ 400.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'Rounded';
+    src: url('./font/GenSenRounded-M.ttc') format("truetype");
+}
+.tmp{
+    background-color: rgb(113, 125, 136);
+    color: rgb(184, 189, 187);
+    font-size: 22px;
+    margin:0px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+.upt{
+    font-family: 'Porto-400';
+    margin:0px auto;
+    background-color: rgb(96, 98, 99);
+    height: 100px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.upt a{
+    background-color: rgb(96, 98, 99);
+    height: 100px;
+    width: 15%;
+    margin-right: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    text-decoration:none;
+}
+.timage{
+    margin:0px auto 10% auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.timage img{
+    object-fit: cover;
+    width: 100%;
+}
+.lft{
+    font-family: 'Porto-400';
+ position: fixed;
+    color: aliceblue;
+    font-size: 25px;
+    left:-0.5%;
+    top:0%;
+    z-index: 1;
+    text-align:center; 
+    padding-right: 15px;
+    writing-mode: vertical-rl;
+    width: 3%;
+    height: 100%;
+}
+.rft{
+    font-family: 'Porto-400';
+    position: fixed;
+    color: aliceblue;
+    font-size: 25px;
+    top:0%;
+    left: 96%;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:4%;
+    flex-direction: column; 
+    text-align: center;
+}
+.rft img{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 75%;
+    border-radius: 50%;
+    border: 1px solid #8d74c7; 
+}
+
+.bg1{
+    font-family: 'Rounded';
+    position: relative;
+    width: 80%;
+    line-height: 450%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to top, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%), linear-gradient(to right, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ), linear-gradient(to left , rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ),url(./image/插圖2.png);
+    color: aliceblue;
+    font-size: 20px;
+    margin: 2.5% auto;
+}
+.bg1-bg{
+    /* COLOR BOARD BACKGROUND */
+    
+    /* background-image:linear-gradient(to bottom, rgb(0, 0, 0) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to top, rgb(0, 0, 0) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to left, rgb(0, 0, 0) 5%, rgba(21, 22, 29, 0) 10%),linear-gradient(to right, rgb(0, 0, 0)5% , rgba(21, 22, 29, 0) 10%),url(./image/bg1-up.png); */
+    background-image: url("./image/upboardBG.png");
+
+    background-repeat: no-repeat;
+    padding: 75px;
+    position: relative;
+    background-size:100% 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+.bg1-bg2{
+    /* BIG WIDTH background */
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    width: 100%;
+    background-image: url("./image/gauze.png");
+}
+.bg2{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(21, 22, 29);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to top, rgb(0, 0, 0) 1%, rgba(21, 22, 29, 0) 25%), linear-gradient(to right, rgb(0, 0, 0) 1%, rgba(21, 22, 29, 0) ), linear-gradient(to left , rgb(0, 0, 0) 1%, rgba(21, 22, 29, 0) ),url(./image/插圖2.png);
+    object-fit: contain;
+    color: aliceblue;
+    height: 35%;
+    clear: both;
+    box-shadow: rgba(0,0,0, .2) 0 0 30px;
+    border-radius: 20px;
+    border: 1px solid #8d74c7; 
+    line-height: 3em;
+}
+.bg2 div{
+    border-left: 10px;
+    font-size: 1vw;
+    font-family: 'Rounded';
+}
+.card-container{
+    font-family: 'Porto-400';
+    margin:  5%   auto 0 auto;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+   
+
+}
+.card{
+    position: relative;
+    width: 70%;
+}
+.card-text{
+    font-size: 1.5vw;
+    position:absolute;
+    text-align: center;
+    display: flex;
+    z-index: 2;
+    color: rgb(247, 0, 0);
+    font-weight: bolder;
+}
+#videocontainer{
+    position: relative;
+    display: block;
+    box-shadow: rgba(0,0,0, .2) 0 0 30px;
+    border-radius: 20px;
+    border: 1px solid #630606; 
+    margin: 0 auto;
+    width: 70%;
+    height: 65%;
+    display:flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to top, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%), linear-gradient(to right, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ), linear-gradient(to left , rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ),url(./image/插圖2.png);
+}
+#gameplay{
+    height: 100%;
+    margin: 0.5% 0.5% 0.5% 0.5%  ;
+    width: 70%;
+    box-shadow: rgba(0,0,0, .2) 0 0 30px;
+    border-radius: 20px;
+}
+#videotext{
+    font-family: 'Rounded';
+    margin-right:4.9% ;
+    padding: 1% ;
+    font-size: 1vw;
+    position: relative;
+    float: left;
+    left:3%;
+    width: 25%;
+    height: auto;
+    line-height: 2em;
+    background-color: rgb(21, 22, 29);
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(77, 56, 82, 0.274) 10px 10px 30px;
+    border: 1px solid #940eb68a; 
+}
+.ZUN{
+    box-shadow: rgba(0,0,0, .2) 0 0 30px;
+    border-radius: 20px;
+    border:0 1px 1px 1px solid #cccccc00; 
+    width: 20%;
+    margin: 5%;
+  
+}
+
+.pagebottom{
+    margin-top: 10%;
+    height: 500px;
+    width: 100%;
+    background-color:rgb(21, 22, 29); ;
+    display: flex;
+    justify-content: center;
+}
+.pagebottom img{
+    height: 10%;
+}
+#volume{
+    clear: both;
+    position:absolute;
+    width: 5%;
+    left: 24%;
+    bottom:1%;
+}
+.bottomboard-container{
+    margin:  -3%   auto 10% auto;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+   
+
+}
+.bottomboard{
+    position: relative;
+    width: 100%;
+}

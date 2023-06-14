@@ -352,7 +352,7 @@ body{
 .bottomboard{
     position: relative;
     width: 100%;
-    left:1%;
+    left:0.2%;
 }
 
 .list{

@@ -441,6 +441,16 @@ body{
     max-width:70%;
     margin-left: 15%;
 }
+.clubconatiner a{
+   
+}
+.clubconatiner img:hover{
+    max-width:70%;
+    margin-left: 15%;
+    scale: 1.1;
+    transition: 0.8s;
+    box-shadow: 0 0 0 1vmax rgb(82, 82, 82);
+}
 .MVcontainer{
     display: flex;
     justify-content: center;

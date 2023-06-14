@@ -30,12 +30,12 @@ window.onload = function(){
     volume.addEventListener("click",function(){
       player.muted = !player.muted;
       if(volumestate=='mute'){
-        volume.src="/image/volume.png";
+        volume.src="./image/volume.png";
         volumestate='speak';
         player.volume=0.25;
       }
       else{
-        volume.src="/image/volume-mute.png";
+        volume.src="./image/volume-mute.png";
         volumestate='mute';
       }
 

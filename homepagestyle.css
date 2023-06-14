@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(./image/darkness.jpg);
     cursor: url(./image/chiruno2.png),default;
@@ -9,6 +12,52 @@ body{
 @font-face {
     font-family: 'Rounded';
     src: url('./font/GenSenRounded-M.ttc') format("truetype");
+}
+@font-face {
+    font-family: 'Togalite';
+    src: url('./font/Togalite-Medium.otf') format("opentype");
+}
+.slideDown{
+    
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+.ML{
+    position: fixed;
+    width: 0.1%;
+    height: 100%;
+    left: 49.9%;
+    background-color: #ff0000;
 }
 .tmp{
     background-color: rgb(113, 125, 136);
@@ -23,24 +72,66 @@ body{
 .upt{
     font-family: 'Porto-400';
     margin:0px auto;
-    background-color: rgb(96, 98, 99);
+    background-color: rgb(21, 22, 39);
     height: 100px;
-    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+}
+.upt{
+    font-family: 'Porto-400';
+    margin:0px auto;
+    background-color: rgba(21, 22, 39, 0.651);
+    height: 2vmax;
+    padding: 2.2vmax 0 1vmax 0;
     width: 90%;
     display: flex;
     justify-content: center;
 }
-.upt a{
-    background-color: rgb(96, 98, 99);
-    height: 100px;
-    width: 15%;
-    margin-right: 10px;
+.upt .text{
+    width: 16%;
     display:flex;
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    font-size: 1.5em;
+    font-size: 1.1vmax;
+    font-weight: 400;
     text-decoration:none;
+    text-align: center;
+    
+    flex-direction: column;
+}
+.upt .text:hover{
+    background-color: white;
+    color:  #9e0258;
+  
+}
+.tpslideDown{
+    width: 16%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.1vmax;
+    font-weight: 400;
+    text-decoration:none;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    color:  #9e0258;
+}
+.upt img{
+    position: absolute;
+    justify-content: center;
+    width: 1.3%;
+    margin-top: -4.4%;
+    
+}
+.upt div{
+    font-family: 'Togalite';
+    font-size: 0.9vmax;
+
 }
 .timage{
     margin:0px auto 10% auto;
@@ -51,6 +142,19 @@ body{
 .timage img{
     object-fit: cover;
     width: 100%;
+}
+.toparrow{
+    position: fixed;
+    top: 95%;
+    width: 10%;
+    left: 44.1%;
+    z-index: 2 ;
+}
+.toparrow img{
+    position: relative;
+    left: 48.4%;
+    width: 20%;
+
 }
 .lft{
     font-family: 'Porto-400';
@@ -100,7 +204,7 @@ body{
     text-align: center;
     background-image: linear-gradient(to bottom, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%),linear-gradient(to top, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) 25%), linear-gradient(to right, rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ), linear-gradient(to left , rgb(21, 22, 29) 1%, rgba(21, 22, 29, 0) ),url(./image/插圖2.png);
     color: aliceblue;
-    font-size: 20px;
+    font-size: 1vw;
     margin: 2.5% auto;
 }
 .bg1-bg{
@@ -223,15 +327,11 @@ body{
 
 .pagebottom{
     margin-top: 10%;
-    height: 500px;
+    height: 10vmax;
     width: 100%;
     background-color:rgb(21, 22, 29); ;
-    display: flex;
-    justify-content: center;
 }
-.pagebottom img{
-    height: 10%;
-}
+
 #volume{
     clear: both;
     position:absolute;
@@ -252,4 +352,12 @@ body{
 .bottomboard{
     position: relative;
     width: 100%;
+    left:1%;
+}
+
+.list{
+    position: fixed;
+    left: 93%;
+    width: 5%;
+    height: 5%;
 }
